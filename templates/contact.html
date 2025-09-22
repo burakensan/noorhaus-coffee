@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block title %}Kontakt • Ensence Concept{% endblock %}
+{% block content %}
+<h1>Kontakt</h1>
+<form method="post" class="form">
+{% csrf_token %}
+<div class="field">{{ form.name.label_tag }} {{ form.name }}</div>
+<div class="field">{{ form.email.label_tag }} {{ form.email }}</div>
+<div class="field">{{ form.message.label_tag }} {{ form.message }}</div>
+<button class="btn" type="submit">Senden</button>
+</form>
+{% for m in messages %}<p role="status">{{ m }}</p>{% endfor %}
+{% endblock %}
