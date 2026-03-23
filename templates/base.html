@@ -1,35 +1,47 @@
+{% load static %}
 <!doctype html>
 <html lang="de">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{% block title %}Ensence – Concept{% endblock %}</title>
-<meta name="description" content="Portfolio und Leistungen von Saliha Schmitz Ensan.">
-<link rel="preload" href="/static/css/main.css" as="style">
-<link rel="stylesheet" href="/static/css/main.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}Noorhaus – Coffee{% endblock %}</title>
+  <meta name="description" content="Noorhaus – Coffee. Specialty Coffee, Opening Hours, Menu, Drop by, Contact.">
+  <link rel="stylesheet" href="{% static 'css/main.css' %}">
+  <script src="{% static 'js/main.js' %}" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-<header class="site-header">
-<a class="logo" href="/">Ensence - Saliha</a>
-<button class="nav-toggle" aria-expanded="false" aria-controls="nav">Menü</button>
-<nav id="nav" class="site-nav">
-<a href="/about/">Über mich</a>
-<a href="/services/">Leistungen</a>
-<a href="/work/">Referenzen</a>
-<a href="/contact/" class="btn">Kontakt</a>
-<a href="/brands/" class="btn">Marken</a>
-</nav>
-</header>
 
+  <div class="bg-logo"></div>
 
-<main>
-{% block content %}{% endblock %}
-</main>
+  <header class="site-header">
 
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
 
-<footer class="site-footer">
-<p>© {{ now|date:"Y" }} Burak • <a href="/impressum/">Impressum</a> • <a href="/datenschutz/">Datenschutz</a></p>
-</footer>
-<script src="/static/js/main.js" defer></script>
+  <nav id="nav" class="site-nav">
+    <a href="#home" class="nav-link">Home</a>
+    <a href="#hours" class="nav-link">Opening Hours</a>
+    <a href="#coffee" class="nav-link">Our Coffee</a>
+    <a href="#dropby" class="nav-link">Drop By</a>
+    <a href="#contact" class="nav-link">Contact</a>
+  </nav>
+     
+  </header>
+
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer class="site-footer">
+    <a href="/impressum/">Impressum</a>
+    <span>•</span>
+    <a href="/datenschutz/">Datenschutz</a>
+    <span>•</span>
+    <a href="https://www.instagram.com/noorhauscoffee/" target="_blank" rel="noopener">
+      Instagram
+    </a>
+  </footer>
 </body>
 </html>
