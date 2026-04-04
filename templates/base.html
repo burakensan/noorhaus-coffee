@@ -1,6 +1,7 @@
 {% load static %}
 <!doctype html>
 <html lang="de">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,8 +11,11 @@
   <script src="{% static 'js/main.js' %}" defer></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" 
+    rel="stylesheet">
 </head>
+
 <body>
 
   <div class="bg-logo"></div>
@@ -20,14 +24,14 @@
 
     <button class="nav-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
 
-  <nav id="nav" class="site-nav">
-    <a href="#home" class="nav-link">Home</a>
-    <a href="#hours" class="nav-link">Opening Hours</a>
-    <a href="#coffee" class="nav-link">Our Coffee</a>
-    <a href="#dropby" class="nav-link">Drop By</a>
-    <a href="#contact" class="nav-link">Contact</a>
-  </nav>
-     
+    <nav id="nav" class="site-nav">
+      <a href="#home" class="nav-link">Home</a>
+      <a href="#hours" class="nav-link">Opening Hours</a>
+      <a href="#menu" class="nav-link">Our Menu</a>
+      <a href="#dropby" class="nav-link">Drop By</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+
   </header>
 
   <main>
@@ -36,12 +40,8 @@
 
   <footer class="site-footer">
     <a href="/impressum/">Impressum</a>
-    <span>•</span>
     <a href="/datenschutz/">Datenschutz</a>
-    <span>•</span>
-    <a href="https://www.instagram.com/noorhauscoffee/" target="_blank" rel="noopener">
-      Instagram
-    </a>
   </footer>
 </body>
+
 </html>

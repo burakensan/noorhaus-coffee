@@ -10,61 +10,73 @@
   <h2 class="section-title">OPENING HOURS</h2>
 
   <div class="hours">
-    <div class="hours-row"><span>Montag</span><span>08:30 – 18:00</span></div>
-    <div class="hours-row"><span>Dienstag</span><span>08:30 – 18:00</span></div>
-    <div class="hours-row"><span>Mittwoch</span><span>08:30 – 18:00</span></div>
-    <div class="hours-row"><span>Donnerstag</span><span>08:30 – 18:00</span></div>
-    <div class="hours-row"><span>Freitag</span><span>08:30 – 18:00</span></div>
-    <div class="hours-row"><span>Samstag</span><span>09:00 – 18:00</span></div>
-    <div class="hours-row"><span>Sonntag</span><span>09:00 – 18:00</span></div>
+    <div class="hours-row">
+      <span>Monday</span>
+      <span>08:30 – 18:00</span>
+    </div>
+    <div class="hours-row">
+      <span>Tuesday</span>
+      <span>08:30 – 18:00</span>
+    </div>
+    <div class="hours-row">
+      <span>Wednesday</span>
+      <span>08:30 – 18:00</span>
+    </div>
+    <div class="hours-row">
+      <span>Thursday</span>
+      <span>08:30 – 18:00</span>
+    </div>
+    <div class="hours-row">
+      <span>Friday</span>
+      <span>08:30 – 18:00</span>
+    </div>
+    <div class="hours-row">
+      <span>Saturday</span>
+      <span>09:00 – 18:00</span>
+    </div>
+    <div class="hours-row">
+      <span>Sunday</span>
+      <span>09:00 – 18:00</span>
+    </div>
   </div>
 </section>
 
-<section id="coffee" class="section">
-  <h2 class="section-title">OUR COFFEE</h2>
+<section id="menu" class="section">
+  <h2 class="section-title">MENU</h2>
 
-  <div class="coffee-grid">
-    <article class="coffee-card">
-      <div class="coffee-meta"><span class="index">[ 01 ]</span></div>
-      <h3>SINGLE & DOUBLE ESPRESSO</h3>
-      <p class="price">2.5 | 3.5</p>
-    </article>
+  <div class="menu-overview">
+    <div class="menu-block">
+      <h3 class="menu-block-title">Hot Drinks</h3>
+      <div class="menu-slider">
+        <img src="{% static 'img/hot-1.jpg' %}" alt="Hot coffee drink" class="menu-image">
+        <img src="{% static 'img/hot-2.jpg' %}" alt="Latte art" class="menu-image">
+      </div>
+    </div>
 
-    <article class="coffee-card">
-      <div class="coffee-meta"><span class="index">[ 02 ]</span></div>
-      <h3>CAPPUCCINO</h3>
-      <p class="price">3.9</p>
-    </article>
+    <div class="menu-block">
+      <h3 class="menu-block-title">Cold Drinks</h3>
+      <div class="menu-slider">
+        <img src="{% static 'img/cold-1.jpg' %}" alt="Iced drink" class="menu-image">
+        <img src="{% static 'img/cold-2.jpg' %}" alt="Cold brew" class="menu-image">
+      </div>
+    </div>
 
-    <article class="coffee-card">
-      <div class="coffee-meta"><span class="index">[ 03 ]</span></div>
-      <h3>FLAT WHITE</h3>
-      <p class="price">4.5</p>
-    </article>
+    <div class="menu-block">
+      <h3 class="menu-block-title">Food</h3>
+      <div class="menu-slider">
+        <img src="{% static 'img/food-1.jpg' %}" alt="Breakfast plate" class="menu-image">
+        <img src="{% static 'img/food-2.jpg' %}" alt="Toast" class="menu-image">
+        <img src="{% static 'img/food-3.jpg' %}" alt="Sandwich" class="menu-image">
+      </div>
+    </div>
 
-    <article class="coffee-card">
-      <div class="coffee-meta"><span class="index">[ 04 ]</span></div>
-      <h3>LATTE</h3>
-      <p class="price">4.7</p>
-    </article>
-
-    <article class="coffee-card">
-      <div class="coffee-meta"><span class="index">[ 05 ]</span></div>
-      <h3>FILTER</h3>
-      <p class="price">3.5</p>
-    </article>
-
-    <article class="coffee-card">
-      <div class="coffee-meta"><span class="index">[ 06 ]</span></div>
-      <h3>MATCHA LATTE</h3>
-      <p class="price">4.8</p>
-    </article>
-
-    <article class="coffee-card">
-      <div class="coffee-meta"><span class="index">[ 07 ]</span></div>
-      <h3>CREW</h3>
-      <p class="price">COFFEE IS A PEOPLE THING</p>
-    </article>
+    <div class="menu-block">
+      <h3 class="menu-block-title">Bakery</h3>
+      <div class="menu-slider">
+        <img src="{% static 'img/bakery-1.jpg' %}" alt="Croissant" class="menu-image">
+        <img src="{% static 'img/bakery-2.jpg' %}" alt="Pastry" class="menu-image">
+      </div>
+    </div>
   </div>
 </section>
 
@@ -73,19 +85,19 @@
 
   <div class="dropby">
     <p class="lead">No reservations. Just come by.</p>
-    <p><strong>Adresse:</strong> Kleine Budengasse 1-3, 50667 Köln</p>
-    <p>
-      <a class="link"
-        href="https://maps.app.goo.gl/CqDsRiCrDB5kqgy47"
-        target="_blank"
-        rel="noopener">
-        Get directions
-      </a>
-    </p>
-    <div class="gallery">
-      <div class="img-box">IMAGE</div>
-      <div class="img-box">IMAGE</div>
-      <div class="img-box">IMAGE</div>
+
+    <a class="direction-ball"
+      href="https://www.google.com/maps/dir/?api=1&destination=Kleine+Budengasse+1-3+50667+K%C3%B6ln" target="_blank"
+      rel="noopener" aria-label="Get directions to Noorhaus Coffee">
+      Get<br>Direction
+    </a>
+
+    <div class="dropby-slider-wrap">
+      <div class="dropby-slider menu-slider">
+        <img src="{% static 'img/interior-1.jpg' %}" alt="Noorhaus interior" class="dropby-image">
+        <img src="{% static 'img/interior-2.jpg' %}" alt="Noorhaus seating area" class="dropby-image">
+        <img src="{% static 'img/interior-3.jpg' %}" alt="Noorhaus coffee bar" class="dropby-image">
+      </div>
     </div>
   </div>
 </section>
@@ -93,33 +105,45 @@
 <section id="contact" class="section">
   <h2 class="section-title">CONTACT</h2>
 
-  <div class="contact-grid">
-    <div class="contact-info">
-      <p class="lead">Say hi.</p>
-      <p><strong>E-Mail:</strong> hello@noorhaus-coffee.de</p>
-      <p><strong>Telefon:</strong> +49 …</p>
+  <div class="contact-section">
+    <p class="contact-intro">
+      For collaborations, inquiries or business events — get in touch.
+    </p>
+
+    <div class="contact-list">
+      <button class="contact-card copy-item" type="button" data-copy="hello@noorhaus-coffee.de">
+        <span class="contact-label">Email</span>
+        <span class="contact-value">hello@noorhaus-coffee.de</span>
+      </button>
+
+      <button class="contact-card copy-item" type="button" data-copy="+49 000 0000000">
+        <span class="contact-label">Phone</span>
+        <span class="contact-value">+49 000 0000000</span>
+      </button>
+
+      <a class="contact-card contact-link instagram" href="https://www.instagram.com/noorhauscoffee/" target="_blank"
+        rel="noopener">
+        <span class="contact-icon">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <defs>
+              <linearGradient id="ig-gradient" x1="0%" y1="100%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#feda75" />
+                <stop offset="30%" stop-color="#fa7e1e" />
+                <stop offset="55%" stop-color="#d62976" />
+                <stop offset="75%" stop-color="#962fbf" />
+                <stop offset="100%" stop-color="#4f5bd5" />
+              </linearGradient>
+            </defs>
+            <path fill="url(#ig-gradient)"
+              d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm0 2h10c1.7 0 3 1.3 3 3v10c0 1.7-1.3 3-3 3H7c-1.7 0-3-1.3-3-3V7c0-1.7 1.3-3 3-3zm5 3.2A4.8 4.8 0 1 0 16.8 12 4.8 4.8 0 0 0 12 7.2zm0 2A2.8 2.8 0 1 1 9.2 12 2.8 2.8 0 0 1 12 9.2zm4.5-.9a1.1 1.1 0 1 0 1.1 1.1 1.1 1.1 0 0 0-1.1-1.1z" />
+          </svg>
+        </span>
+
+        <span class="contact-value">@noorhauscoffee</span>
+      </a>
     </div>
 
-    <form class="form" method="post" action="#">
-      {% csrf_token %}
-      <div class="field">
-        <label for="fname">First name</label>
-        <input id="fname" name="fname" type="text" required>
-      </div>
-      <div class="field">
-        <label for="lname">Last name</label>
-        <input id="lname" name="lname" type="text" required>
-      </div>
-      <div class="field">
-        <label for="email">Email</label>
-        <input id="email" name="email" type="email" required>
-      </div>
-      <div class="field">
-        <label for="msg">Message</label>
-        <textarea id="msg" name="msg" required></textarea>
-      </div>
-      <button class="btn" type="submit">SEND</button>
-    </form>
+    <p class="copy-hint">Click email or phone to copy.</p>
   </div>
 </section>
 
