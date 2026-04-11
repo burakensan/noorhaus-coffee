@@ -3,6 +3,15 @@ document.addEventListener("DOMContentLoaded", () => {
   const links = document.querySelectorAll(".nav-link");
   const sections = document.querySelectorAll("main section[id]");
   const hoursSection = document.querySelector("#hours");
+  const navToggle = document.querySelector(".nav-toggle");
+  const siteNav = document.querySelector(".site-nav");
+
+  if (navToggle && siteNav) {
+    navToggle.addEventListener("click", () => {
+      const isOpen = siteNav.classList.toggle("is-open");
+      navToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+    });
+  }
 
   // Aktiven Nav-Link markieren
   if (sections.length > 0 && links.length > 0) {
