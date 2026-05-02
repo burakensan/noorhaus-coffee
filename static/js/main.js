@@ -9,6 +9,8 @@ document.addEventListener("DOMContentLoaded", () => {
   if (navToggle && siteNav) {
     navToggle.addEventListener("click", () => {
       const isOpen = siteNav.classList.toggle("is-open");
+
+      navToggle.classList.toggle("is-open", isOpen);
       navToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
     });
   }

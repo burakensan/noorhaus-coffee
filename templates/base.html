@@ -16,30 +16,34 @@
 
 <body class="{% block body_class %}{% endblock %}"></body>
 
-  <div class="bg-logo"></div>
+<div class="bg-logo"></div>
 
-  <header class="site-header">
+<header class="site-header">
 
-    <button class="nav-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
+  <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
 
-    <nav id="nav" class="site-nav">
-      <a href="/#home" class="nav-link">Home</a>
-      <a href="/#hours" class="nav-link">Opening Hours</a>
-      <a href="/#menu" class="nav-link">Our Menu</a>
-      <a href="/#dropby" class="nav-link">Drop By</a>
-      <a href="/#contact" class="nav-link">Contact</a>
-    </nav>
+  <nav id="nav" class="site-nav">
+    <a href="/#home" class="nav-link">Home</a>
+    <a href="/#hours" class="nav-link">Opening Hours</a>
+    <a href="/#menu" class="nav-link">Our Menu</a>
+    <a href="/#dropby" class="nav-link">Drop By</a>
+    <a href="/#contact" class="nav-link">Contact</a>
+  </nav>
 
-  </header>
+</header>
 
-  <main>
-    {% block content %}{% endblock %}
-  </main>
+<main>
+  {% block content %}{% endblock %}
+</main>
 
-  <footer class="site-footer">
-    <a href="{% url 'impressum' %}">Impressum</a>
-    <a href="{% url 'datenschutz' %}">Datenschutz</a>
-  </footer>
+<footer class="site-footer">
+  <a href="{% url 'impressum' %}">Impressum</a>
+  <a href="{% url 'datenschutz' %}">Datenschutz</a>
+</footer>
 </body>
 
 </html>
